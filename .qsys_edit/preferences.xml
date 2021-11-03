@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <window width="1300" height="627" x="-3" y="31" />
+ <systemtable
+   filter="All Interfaces"
+   showAvalonDomains="1"
+   showClockDomains="0"
+   showResetDomains="0">
+  <columns>
+   <connections preferredWidth="239" />
+   <irq preferredWidth="47" />
+   <name preferredWidth="356" />
+  </columns>
+ </systemtable>
+ <library expandedCategories="Library,Existing IP Variants,Project" />
+ <generation path="" />
+ <hdlexample language="VERILOG" />
+ <sysinfo autosync="1" />
+ <avalontool showOnlyAvalonDomainInterfaces="1" />
+</preferences>

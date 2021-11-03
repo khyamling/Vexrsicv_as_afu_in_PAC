@@ -1,0 +1,44 @@
+set_global_assignment -entity "bram_VexRiscvAxi4_0" -library "bram_VexRiscvAxi4_0" -name IP_TOOL_NAME "QsysPrimePro"
+set_global_assignment -entity "bram_VexRiscvAxi4_0" -library "bram_VexRiscvAxi4_0" -name IP_TOOL_VERSION "19.2"
+set_global_assignment -entity "bram_VexRiscvAxi4_0" -library "bram_VexRiscvAxi4_0" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "bram_VexRiscvAxi4_0" -library "bram_VexRiscvAxi4_0" -name IP_TOOL_VENDOR_NAME "Altera Corporation"
+set_global_assignment -entity "bram_VexRiscvAxi4_0" -library "bram_VexRiscvAxi4_0" -name IP_TOP_LEVEL_COMPONENT_NAME "VexRiscvAxi4"
+set_global_assignment -library "bram_VexRiscvAxi4_0" -name SOPCINFO_FILE [file join $::quartus(qip_path) "bram_VexRiscvAxi4_0.sopcinfo"]
+set_global_assignment -entity "bram_VexRiscvAxi4_0" -library "bram_VexRiscvAxi4_0" -name SLD_INFO "QSYS_NAME bram_VexRiscvAxi4_0 HAS_SOPCINFO 1 GENERATION_ID 0"
+set_global_assignment -library "bram_VexRiscvAxi4_0" -name MISC_FILE [file join $::quartus(qip_path) "bram_VexRiscvAxi4_0.cmp"]
+set_global_assignment -entity "bram_VexRiscvAxi4_0" -library "bram_VexRiscvAxi4_0" -name IP_TARGETED_DEVICE_FAMILY "Arria 10"
+set_global_assignment -entity "bram_VexRiscvAxi4_0" -library "bram_VexRiscvAxi4_0" -name IP_GENERATED_DEVICE_FAMILY "{Arria 10}"
+set_global_assignment -entity "bram_VexRiscvAxi4_0" -library "bram_VexRiscvAxi4_0" -name IP_QSYS_MODE "STANDALONE"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "bram_VexRiscvAxi4_0" -name MISC_FILE [file join $::quartus(qip_path) "../bram_VexRiscvAxi4_0.ip"]
+
+set_global_assignment -entity "VexRiscvAxi4" -library "VexRiscvAxi4_10" -name IP_COMPONENT_NAME "VmV4UmlzY3ZBeGk0"
+set_global_assignment -entity "VexRiscvAxi4" -library "VexRiscvAxi4_10" -name IP_COMPONENT_DISPLAY_NAME "VmV4UmlzY3ZBeGk0"
+set_global_assignment -entity "VexRiscvAxi4" -library "VexRiscvAxi4_10" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "VexRiscvAxi4" -library "VexRiscvAxi4_10" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "VexRiscvAxi4" -library "VexRiscvAxi4_10" -name IP_COMPONENT_VERSION "MS4w"
+set_global_assignment -entity "VexRiscvAxi4" -library "VexRiscvAxi4_10" -name IP_COMPONENT_DESCRIPTION "VmV4UmlzY3ZBeGk0IEF4aSBpbnRlcmZhY2U="
+set_global_assignment -entity "VexRiscvAxi4" -library "VexRiscvAxi4_10" -name IP_COMPONENT_PARAMETER "QVVUT19FWFRFUk5BTElOVEVSUlVQVF9JTlRFUlJVUFRTX1VTRUQ=::LTE=::QXV0byBJTlRFUlJVUFRTX1VTRUQ="
+set_global_assignment -entity "VexRiscvAxi4" -library "VexRiscvAxi4_10" -name IP_COMPONENT_PARAMETER "QVVUT19USU1FUklOVEVSUlVQVF9JTlRFUlJVUFRTX1VTRUQ=::LTE=::QXV0byBJTlRFUlJVUFRTX1VTRUQ="
+set_global_assignment -entity "bram_VexRiscvAxi4_0" -library "bram_VexRiscvAxi4_0" -name IP_COMPONENT_NAME "YnJhbV9WZXhSaXNjdkF4aTRfMA=="
+set_global_assignment -entity "bram_VexRiscvAxi4_0" -library "bram_VexRiscvAxi4_0" -name IP_COMPONENT_DISPLAY_NAME "c3lzdGVt"
+set_global_assignment -entity "bram_VexRiscvAxi4_0" -library "bram_VexRiscvAxi4_0" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "bram_VexRiscvAxi4_0" -library "bram_VexRiscvAxi4_0" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "bram_VexRiscvAxi4_0" -library "bram_VexRiscvAxi4_0" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "bram_VexRiscvAxi4_0" -library "bram_VexRiscvAxi4_0" -name IP_COMPONENT_VERSION "MS4w"
+set_global_assignment -entity "bram_VexRiscvAxi4_0" -library "bram_VexRiscvAxi4_0" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MA==::QXV0byBHRU5FUkFUSU9OX0lE"
+set_global_assignment -entity "bram_VexRiscvAxi4_0" -library "bram_VexRiscvAxi4_0" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfRkFNSUxZ::QXJyaWEgMTA=::QXV0byBERVZJQ0VfRkFNSUxZ"
+set_global_assignment -entity "bram_VexRiscvAxi4_0" -library "bram_VexRiscvAxi4_0" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0U=::MTBBWDExNU4yRjQwRTJMRw==::QXV0byBERVZJQ0U="
+set_global_assignment -entity "bram_VexRiscvAxi4_0" -library "bram_VexRiscvAxi4_0" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfU1BFRURHUkFERQ==::Mg==::QXV0byBERVZJQ0VfU1BFRURHUkFERQ=="
+set_global_assignment -entity "bram_VexRiscvAxi4_0" -library "bram_VexRiscvAxi4_0" -name IP_COMPONENT_PARAMETER "QVVUT19DTE9DS19DTE9DS19SQVRF::LTE=::QXV0byBDTE9DS19SQVRF"
+set_global_assignment -entity "bram_VexRiscvAxi4_0" -library "bram_VexRiscvAxi4_0" -name IP_COMPONENT_PARAMETER "QVVUT19DTE9DS19DTE9DS19ET01BSU4=::LTE=::QXV0byBDTE9DS19ET01BSU4="
+set_global_assignment -entity "bram_VexRiscvAxi4_0" -library "bram_VexRiscvAxi4_0" -name IP_COMPONENT_PARAMETER "QVVUT19DTE9DS19SRVNFVF9ET01BSU4=::LTE=::QXV0byBSRVNFVF9ET01BSU4="
+set_global_assignment -entity "bram_VexRiscvAxi4_0" -library "bram_VexRiscvAxi4_0" -name IP_COMPONENT_PARAMETER "QVVUT19EQlVTQVhJX0FERFJFU1NfV0lEVEg=::LTE=::QXV0byBBRERSRVNTX1dJRFRI"
+set_global_assignment -entity "bram_VexRiscvAxi4_0" -library "bram_VexRiscvAxi4_0" -name IP_COMPONENT_PARAMETER "QVVUT19JQlVTQVhJX0FERFJFU1NfV0lEVEg=::LTE=::QXV0byBBRERSRVNTX1dJRFRI"
+set_global_assignment -entity "bram_VexRiscvAxi4_0" -library "bram_VexRiscvAxi4_0" -name IP_COMPONENT_PARAMETER "QVVUT19FWFRFUk5BTElOVEVSUlVQVF9JTlRFUlJVUFRTX1VTRUQ=::LTE=::QXV0byBJTlRFUlJVUFRTX1VTRUQ="
+set_global_assignment -entity "bram_VexRiscvAxi4_0" -library "bram_VexRiscvAxi4_0" -name IP_COMPONENT_PARAMETER "QVVUT19USU1FUklOVEVSUlVQVF9JTlRFUlJVUFRTX1VTRUQ=::LTE=::QXV0byBJTlRFUlJVUFRTX1VTRUQ="
+
+
+set_global_assignment -library "VexRiscvAxi4_10" -name VERILOG_FILE [file join $::quartus(qip_path) "VexRiscvAxi4_10/synth/VexRiscvAxi4.v"]
+set_global_assignment -library "bram_VexRiscvAxi4_0" -name VERILOG_FILE [file join $::quartus(qip_path) "synth/bram_VexRiscvAxi4_0.v"]
+

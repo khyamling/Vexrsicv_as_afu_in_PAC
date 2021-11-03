@@ -1,0 +1,168 @@
+Flow report for afu_default
+Mon Jul 12 08:41:49 2021
+Quartus Prime Version 19.2.0 Build 57 06/24/2019 Patches 0.01rc SJ Pro Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Legal Notice
+  4. Flow Summary
+  5. Flow Settings
+  6. Flow Non-Default Global Settings
+  7. Flow Elapsed Time
+  8. Flow OS Summary
+  9. Flow Log
+ 10. Flow Log
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2019  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
+++
+; Flow Summary ;
++
++
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2019  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
+++
+; Flow Summary ;
++
++
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 07/12/2021 08:41:28 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; afu_default         ;
+; Start date & time ; 07/12/2021 08:41:48 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; afu_default         ;
++-------------------+---------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                                ;
++----------------------------------------------+-----------------------------------------------------------------------+---------------+-------------+------------+
+; Assignment Name                              ; Value                                                                 ; Default Value ; Entity Name ; Section Id ;
++----------------------------------------------+-----------------------------------------------------------------------+---------------+-------------+------------+
+; ADD_PASS_THROUGH_LOGIC_TO_INFERRED_RAMS      ; Off                                                                   ; On            ; --          ; --         ;
+; ALLOW_ANY_RAM_SIZE_FOR_RECOGNITION           ; On                                                                    ; Off           ; --          ; --         ;
+; ALLOW_DSP_RETIMING                           ; On                                                                    ; Off           ; --          ; --         ;
+; ALLOW_RAM_RETIMING                           ; On                                                                    ; Off           ; --          ; --         ;
+; COMPILER_SIGNATURE_ID                        ; 250977677256393.162610448826104                                       ; --            ; --          ; --         ;
+; FITTER_EFFORT                                ; Standard Fit                                                          ; Auto Fit      ; --          ; --         ;
+; MAX_CORE_JUNCTION_TEMP                       ; 100                                                                   ; --            ; --          ; --         ;
+; MIN_CORE_JUNCTION_TEMP                       ; 0                                                                     ; --            ; --          ; --         ;
+; MISC_FILE                                    ; ./platform/AFU_debug/SCJIO/SCJIO.cmp                                  ; --            ; --          ; --         ;
+; MISC_FILE                                    ; ./platform/AFU_debug/SCJIO/../SCJIO.qsys                              ; --            ; --          ; --         ;
+; MUX_RESTRUCTURE                              ; On                                                                    ; Auto          ; --          ; --         ;
+; OPTIMIZATION_MODE                            ; High Performance Effort                                               ; Balanced      ; --          ; --         ;
+; OPTIMIZATION_TECHNIQUE                       ; Speed                                                                 ; Balanced      ; --          ; --         ;
+; PHYSICAL_SYNTHESIS                           ; On                                                                    ; Off           ; --          ; --         ;
+; PLACEMENT_EFFORT_MULTIPLIER                  ; 4.0                                                                   ; 1.0           ; --          ; --         ;
+; POWER_BOARD_THERMAL_MODEL                    ; None (CONSERVATIVE)                                                   ; --            ; --          ; --         ;
+; POWER_PRESET_COOLING_SOLUTION                ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                                 ; --            ; --          ; --         ;
+; PROGRAMMABLE_POWER_TECHNOLOGY_SETTING        ; Force All Tiles with Failing Timing Paths to High Speed               ; Automatic     ; --          ; --         ;
+; PROJECT_OUTPUT_DIRECTORY                     ; output_files                                                          ; --            ; --          ; --         ;
+; QII_AUTO_PACKED_REGISTERS                    ; Normal                                                                ; Auto          ; --          ; --         ;
+; REVISION_TYPE                                ; PR_Impl                                                               ; --            ; --          ; --         ;
+; ROUTER_LCELL_INSERTION_AND_LOGIC_DUPLICATION ; On                                                                    ; Auto          ; --          ; --         ;
+; ROUTER_TIMING_OPTIMIZATION_LEVEL             ; MAXIMUM                                                               ; Normal        ; --          ; --         ;
+; SEARCH_PATH                                  ; platform/ofs_plat_if/par/../rtl/ifc_classes/host_chan/afu_ifcs/avalon ; --            ; --          ; --         ;
+; SEARCH_PATH                                  ; platform/ofs_plat_if/par/../rtl/ifc_classes/host_chan/afu_ifcs/axi    ; --            ; --          ; --         ;
+; SEARCH_PATH                                  ; platform/ofs_plat_if/par/../rtl/ifc_classes/host_chan/afu_ifcs/ccip   ; --            ; --          ; --         ;
+; SEARCH_PATH                                  ; platform/ofs_plat_if/par/../rtl/ifc_classes/local_mem/afu_ifcs        ; --            ; --          ; --         ;
+; SEARCH_PATH                                  ; platform/ofs_plat_if/par/../rtl/base_ifcs/avalon                      ; --            ; --          ; --         ;
+; SEARCH_PATH                                  ; platform/ofs_plat_if/par/../rtl/base_ifcs/axi                         ; --            ; --          ; --         ;
+; SEARCH_PATH                                  ; platform/ofs_plat_if/par/../rtl/base_ifcs/clocks                      ; --            ; --          ; --         ;
+; SEARCH_PATH                                  ; platform/ofs_plat_if/par/../rtl/ifc_classes/host_chan                 ; --            ; --          ; --         ;
+; SEARCH_PATH                                  ; platform/ofs_plat_if/par/../rtl/ifc_classes/hssi                      ; --            ; --          ; --         ;
+; SEARCH_PATH                                  ; platform/ofs_plat_if/par/../rtl/ifc_classes/local_mem                 ; --            ; --          ; --         ;
+; SEARCH_PATH                                  ; platform/ofs_plat_if/par/../rtl/compat                                ; --            ; --          ; --         ;
+; SEARCH_PATH                                  ; platform/ofs_plat_if/par/../rtl                                       ; --            ; --          ; --         ;
+; SEARCH_PATH                                  ; ./platform                                                            ; --            ; --          ; --         ;
+; SEARCH_PATH                                  ; ./platform/AFU_debug                                                  ; --            ; --          ; --         ;
+; SEARCH_PATH                                  ; ../hw                                                                 ; --            ; --          ; --         ;
+; SLD_INFO                                     ; QSYS_NAME SCJIO HAS_SOPCINFO 1 GENERATION_ID 0                        ; --            ; SCJIO       ; --         ;
+; SOPCINFO_FILE                                ; ./platform/AFU_debug/SCJIO/SCJIO.sopcinfo                             ; --            ; --          ; --         ;
+; TOP_LEVEL_ENTITY                             ; dcp_top                                                               ; afu_default   ; --          ; --         ;
+; USE_HIGH_SPEED_ADDER                         ; -- (Not supported for targeted family)                                ; Auto          ; --          ; --         ;
+; VERILOG_INPUT_VERSION                        ; SystemVerilog_2005                                                    ; Verilog_2001  ; --          ; --         ;
+; VERILOG_MACRO                                ; INCLUDE_DDR4=<None>                                                   ; --            ; --          ; --         ;
+; VERILOG_MACRO                                ; INCLUDE_ETHERNET=<None>                                               ; --            ; --          ; --         ;
+; VERILOG_MACRO                                ; PLATFORM_IF_AVAIL=1                                                   ; --            ; --          ; --         ;
+; VERILOG_SHOW_LMF_MAPPING_MESSAGES            ; Off                                                                   ; --            ; --          ; --         ;
++----------------------------------------------+-----------------------------------------------------------------------+---------------+-------------+------------+
+
+
++----------------------------------------------------------------------------+
+; Flow Elapsed Time                                                          ;
++-------------+--------------+-------------------------+---------------------+
+; Module Name ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ;
++-------------+--------------+-------------------------+---------------------+
+
+
++------------------------------------------------------------------------+
+; Flow OS Summary                                                        ;
++-------------+------------------+---------+------------+----------------+
+; Module Name ; Machine Hostname ; OS Name ; OS Version ; Processor type ;
++-------------+------------------+---------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+
+
+
+------------
+; Flow Log ;
+------------
+
+
+

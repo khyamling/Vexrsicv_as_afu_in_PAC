@@ -1,0 +1,10 @@
+	component bram_ram_1port_0 is
+		port (
+			data    : in  std_logic_vector(63 downto 0) := (others => 'X'); -- datain
+			q       : out std_logic_vector(63 downto 0);                    -- dataout
+			address : in  std_logic_vector(8 downto 0)  := (others => 'X'); -- address
+			wren    : in  std_logic                     := 'X';             -- wren
+			clock   : in  std_logic                     := 'X'              -- clk
+		);
+	end component bram_ram_1port_0;
+

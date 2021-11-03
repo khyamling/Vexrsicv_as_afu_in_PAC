@@ -1,0 +1,119 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2019  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 416 280)
+	(text "bram" (rect 194 -1 215 11)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 264 20 276)(font "Arial" ))
+	(port
+		(pt 0 72)
+		(input)
+		(text "clk_clk" (rect 0 0 27 12)(font "Arial" (font_size 8)))
+		(text "clk_clk" (rect 4 61 46 72)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 176 72)(line_width 1))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "onchip_memory_address[9..0]" (rect 0 0 123 12)(font "Arial" (font_size 8)))
+		(text "onchip_memory_address[9..0]" (rect 4 101 166 112)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 176 112)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "onchip_memory_chipselect" (rect 0 0 109 12)(font "Arial" (font_size 8)))
+		(text "onchip_memory_chipselect" (rect 4 117 148 128)(font "Arial" (font_size 8)))
+		(line (pt 0 128)(pt 176 128)(line_width 1))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "onchip_memory_clken" (rect 0 0 92 12)(font "Arial" (font_size 8)))
+		(text "onchip_memory_clken" (rect 4 133 118 144)(font "Arial" (font_size 8)))
+		(line (pt 0 144)(pt 176 144)(line_width 1))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "onchip_memory_write" (rect 0 0 89 12)(font "Arial" (font_size 8)))
+		(text "onchip_memory_write" (rect 4 149 118 160)(font "Arial" (font_size 8)))
+		(line (pt 0 160)(pt 176 160)(line_width 1))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "onchip_memory_writedata[31..0]" (rect 0 0 129 12)(font "Arial" (font_size 8)))
+		(text "onchip_memory_writedata[31..0]" (rect 4 181 184 192)(font "Arial" (font_size 8)))
+		(line (pt 0 192)(pt 176 192)(line_width 3))
+	)
+	(port
+		(pt 0 208)
+		(input)
+		(text "onchip_memory_byteenable[3..0]" (rect 0 0 134 12)(font "Arial" (font_size 8)))
+		(text "onchip_memory_byteenable[3..0]" (rect 4 197 184 208)(font "Arial" (font_size 8)))
+		(line (pt 0 208)(pt 176 208)(line_width 3))
+	)
+	(port
+		(pt 0 248)
+		(input)
+		(text "reset_reset_n" (rect 0 0 56 12)(font "Arial" (font_size 8)))
+		(text "reset_reset_n" (rect 4 237 82 248)(font "Arial" (font_size 8)))
+		(line (pt 0 248)(pt 176 248)(line_width 1))
+	)
+	(port
+		(pt 0 176)
+		(output)
+		(text "onchip_memory_readdata[31..0]" (rect 0 0 129 12)(font "Arial" (font_size 8)))
+		(text "onchip_memory_readdata[31..0]" (rect 4 165 178 176)(font "Arial" (font_size 8)))
+		(line (pt 0 176)(pt 176 176)(line_width 3))
+	)
+	(drawing
+		(text "clk" (rect 161 43 340 99)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 181 67 380 144)(font "Arial" (color 0 0 0)))
+		(text "onchip_memory" (rect 85 83 248 179)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "address" (rect 181 107 404 224)(font "Arial" (color 0 0 0)))
+		(text "chipselect" (rect 181 123 422 256)(font "Arial" (color 0 0 0)))
+		(text "clken" (rect 181 139 392 288)(font "Arial" (color 0 0 0)))
+		(text "write" (rect 181 155 392 320)(font "Arial" (color 0 0 0)))
+		(text "readdata" (rect 181 171 410 352)(font "Arial" (color 0 0 0)))
+		(text "writedata" (rect 181 187 416 384)(font "Arial" (color 0 0 0)))
+		(text "byteenable" (rect 181 203 422 416)(font "Arial" (color 0 0 0)))
+		(text "reset" (rect 147 219 324 451)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "reset_n" (rect 181 243 404 496)(font "Arial" (color 0 0 0)))
+		(text " bram " (rect 391 264 818 538)(font "Arial" ))
+		(line (pt 176 32)(pt 240 32)(line_width 1))
+		(line (pt 240 32)(pt 240 264)(line_width 1))
+		(line (pt 176 264)(pt 240 264)(line_width 1))
+		(line (pt 176 32)(pt 176 264)(line_width 1))
+		(line (pt 177 52)(pt 177 76)(line_width 1))
+		(line (pt 178 52)(pt 178 76)(line_width 1))
+		(line (pt 177 92)(pt 177 212)(line_width 1))
+		(line (pt 178 92)(pt 178 212)(line_width 1))
+		(line (pt 177 228)(pt 177 252)(line_width 1))
+		(line (pt 178 228)(pt 178 252)(line_width 1))
+		(line (pt 0 0)(pt 416 0)(line_width 1))
+		(line (pt 416 0)(pt 416 280)(line_width 1))
+		(line (pt 0 280)(pt 416 280)(line_width 1))
+		(line (pt 0 0)(pt 0 280)(line_width 1))
+	)
+)

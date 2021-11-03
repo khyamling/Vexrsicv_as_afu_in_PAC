@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2021.08.10.11:29:38"
+ outputDirectory="/home/u52099/PAC_card_A10/test_bram/test_bram/bram_ip_test/ip/bram/bram_VexRiscvAxi4_0/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Arria 10"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="10AX115N2F40E2LG"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="2"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DBUSAXI_ADDRESS_MAP"
+     type="AddressMap"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DBUSAXI_ADDRESS_WIDTH"
+     type="AddressWidthType"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_IBUSAXI_ADDRESS_MAP"
+     type="AddressMap"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_IBUSAXI_ADDRESS_WIDTH"
+     type="AddressWidthType"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_EXTERNALINTERRUPT_INTERRUPTS_USED"
+     type="BigInteger"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_TIMERINTERRUPT_INTERRUPTS_USED"
+     type="BigInteger"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="clock" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="reset" kind="reset" start="0">
+   <property name="associatedClock" value="clock" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="reset" direction="input" role="reset" width="1" />
+  </interface>
+  <interface name="dBusaxi" kind="axi4" start="1">
+   <property name="associatedClock" value="clock" />
+   <property name="associatedReset" value="reset" />
+   <property name="trustzoneAware" value="true" />
+   <property name="maximumOutstandingReads" value="1" />
+   <property name="maximumOutstandingWrites" value="1" />
+   <property name="maximumOutstandingTransactions" value="1" />
+   <property name="readIssuingCapability" value="1" />
+   <property name="writeIssuingCapability" value="1" />
+   <property name="combinedIssuingCapability" value="1" />
+   <property name="issuesINCRBursts" value="true" />
+   <property name="issuesWRAPBursts" value="true" />
+   <property name="issuesFIXEDBursts" value="true" />
+   <port name="dBusAxi_aw_valid" direction="output" role="awvalid" width="1" />
+   <port name="dBusAxi_aw_ready" direction="input" role="awready" width="1" />
+   <port
+       name="dBusAxi_aw_payload_addr"
+       direction="output"
+       role="awaddr"
+       width="32" />
+   <port name="dBusAxi_aw_payload_id" direction="output" role="awid" width="1" />
+   <port
+       name="dBusAxi_aw_payload_region"
+       direction="output"
+       role="awregion"
+       width="4" />
+   <port
+       name="dBusAxi_aw_payload_len"
+       direction="output"
+       role="awlen"
+       width="8" />
+   <port
+       name="dBusAxi_aw_payload_size"
+       direction="output"
+       role="awsize"
+       width="3" />
+   <port
+       name="dBusAxi_aw_payload_burst"
+       direction="output"
+       role="awburst"
+       width="2" />
+   <port
+       name="dBusAxi_aw_payload_lock"
+       direction="output"
+       role="awlock"
+       width="1" />
+   <port
+       name="dBusAxi_aw_payload_cache"
+       direction="output"
+       role="awcache"
+       width="4" />
+   <port
+       name="dBusAxi_aw_payload_qos"
+       direction="output"
+       role="awqos"
+       width="4" />
+   <port
+       name="dBusAxi_aw_payload_prot"
+       direction="output"
+       role="awprot"
+       width="3" />
+   <port name="dBusAxi_w_valid" direction="output" role="wvalid" width="1" />
+   <port name="dBusAxi_w_ready" direction="input" role="wready" width="1" />
+   <port
+       name="dBusAxi_w_payload_data"
+       direction="output"
+       role="wdata"
+       width="32" />
+   <port
+       name="dBusAxi_w_payload_strb"
+       direction="output"
+       role="wstrb"
+       width="4" />
+   <port
+       name="dBusAxi_w_payload_last"
+       direction="output"
+       role="wlast"
+       width="1" />
+   <port name="dBusAxi_b_valid" direction="input" role="bvalid" width="1" />
+   <port name="dBusAxi_b_ready" direction="output" role="bready" width="1" />
+   <port name="dBusAxi_b_payload_id" direction="input" role="bid" width="1" />
+   <port
+       name="dBusAxi_b_payload_resp"
+       direction="input"
+       role="bresp"
+       width="2" />
+   <port name="dBusAxi_ar_valid" direction="output" role="arvalid" width="1" />
+   <port name="dBusAxi_ar_ready" direction="input" role="arready" width="1" />
+   <port
+       name="dBusAxi_ar_payload_addr"
+       direction="output"
+       role="araddr"
+       width="32" />
+   <port name="dBusAxi_ar_payload_id" direction="output" role="arid" width="1" />
+   <port
+       name="dBusAxi_ar_payload_region"
+       direction="output"
+       role="arregion"
+       width="4" />
+   <port
+       name="dBusAxi_ar_payload_len"
+       direction="output"
+       role="arlen"
+       width="8" />
+   <port
+       name="dBusAxi_ar_payload_size"
+       direction="output"
+       role="arsize"
+       width="3" />
+   <port
+       name="dBusAxi_ar_payload_burst"
+       direction="output"
+       role="arburst"
+       width="2" />
+   <port
+       name="dBusAxi_ar_payload_lock"
+       direction="output"
+       role="arlock"
+       width="1" />
+   <port
+       name="dBusAxi_ar_payload_cache"
+       direction="output"
+       role="arcache"
+       width="4" />
+   <port
+       name="dBusAxi_ar_payload_qos"
+       direction="output"
+       role="arqos"
+       width="4" />
+   <port
+       name="dBusAxi_ar_payload_prot"
+       direction="output"
+       role="arprot"
+       width="3" />
+   <port name="dBusAxi_r_valid" direction="input" role="rvalid" width="1" />
+   <port name="dBusAxi_r_ready" direction="output" role="rready" width="1" />
+   <port
+       name="dBusAxi_r_payload_data"
+       direction="input"
+       role="rdata"
+       width="32" />
+   <port name="dBusAxi_r_payload_id" direction="input" role="rid" width="1" />
+   <port
+       name="dBusAxi_r_payload_resp"
+       direction="input"
+       role="rresp"
+       width="2" />
+   <port
+       name="dBusAxi_r_payload_last"
+       direction="input"
+       role="rlast"
+       width="1" />
+  </interface>
+  <interface name="iBusaxi" kind="axi4" start="1">
+   <property name="associatedClock" value="clock" />
+   <property name="associatedReset" value="reset" />
+   <property name="trustzoneAware" value="true" />
+   <property name="maximumOutstandingReads" value="1" />
+   <property name="maximumOutstandingWrites" value="1" />
+   <property name="maximumOutstandingTransactions" value="1" />
+   <property name="readIssuingCapability" value="1" />
+   <property name="writeIssuingCapability" value="1" />
+   <property name="combinedIssuingCapability" value="1" />
+   <property name="issuesINCRBursts" value="true" />
+   <property name="issuesWRAPBursts" value="true" />
+   <property name="issuesFIXEDBursts" value="true" />
+   <port name="iBusAxi_ar_valid" direction="output" role="arvalid" width="1" />
+   <port name="iBusAxi_ar_ready" direction="input" role="arready" width="1" />
+   <port
+       name="iBusAxi_ar_payload_addr"
+       direction="output"
+       role="araddr"
+       width="32" />
+   <port name="iBusAxi_ar_payload_id" direction="output" role="arid" width="1" />
+   <port
+       name="iBusAxi_ar_payload_region"
+       direction="output"
+       role="arregion"
+       width="4" />
+   <port
+       name="iBusAxi_ar_payload_len"
+       direction="output"
+       role="arlen"
+       width="8" />
+   <port
+       name="iBusAxi_ar_payload_size"
+       direction="output"
+       role="arsize"
+       width="3" />
+   <port
+       name="iBusAxi_ar_payload_burst"
+       direction="output"
+       role="arburst"
+       width="2" />
+   <port
+       name="iBusAxi_ar_payload_lock"
+       direction="output"
+       role="arlock"
+       width="1" />
+   <port
+       name="iBusAxi_ar_payload_cache"
+       direction="output"
+       role="arcache"
+       width="4" />
+   <port
+       name="iBusAxi_ar_payload_qos"
+       direction="output"
+       role="arqos"
+       width="4" />
+   <port
+       name="iBusAxi_ar_payload_prot"
+       direction="output"
+       role="arprot"
+       width="3" />
+   <port name="iBusAxi_r_valid" direction="input" role="rvalid" width="1" />
+   <port name="iBusAxi_r_ready" direction="output" role="rready" width="1" />
+   <port
+       name="iBusAxi_r_payload_data"
+       direction="input"
+       role="rdata"
+       width="32" />
+   <port name="iBusAxi_r_payload_id" direction="input" role="rid" width="1" />
+   <port
+       name="iBusAxi_r_payload_resp"
+       direction="input"
+       role="rresp"
+       width="2" />
+   <port
+       name="iBusAxi_r_payload_last"
+       direction="input"
+       role="rlast"
+       width="1" />
+   <port name="iBusaxi_awaddr" direction="output" role="awaddr" width="32" />
+   <port name="iBusaxi_awprot" direction="output" role="awprot" width="3" />
+   <port name="iBusaxi_awlock" direction="output" role="awlock" width="1" />
+   <port name="iBusaxi_awvalid" direction="output" role="awvalid" width="1" />
+   <port name="iBusaxi_awready" direction="input" role="awready" width="1" />
+   <port name="iBusaxi_wdata" direction="output" role="wdata" width="32" />
+   <port name="iBusaxi_wlast" direction="output" role="wlast" width="1" />
+   <port name="iBusaxi_wready" direction="input" role="wready" width="1" />
+   <port name="iBusaxi_wvalid" direction="output" role="wvalid" width="1" />
+   <port name="iBusaxi_bvalid" direction="input" role="bvalid" width="1" />
+   <port name="iBusaxi_bready" direction="output" role="bready" width="1" />
+   <port name="iBusaxi_bid" direction="input" role="bid" width="1" />
+   <port name="iBusaxi_awid" direction="output" role="awid" width="1" />
+  </interface>
+  <interface name="debugReset" kind="reset" start="0">
+   <property name="associatedClock" value="clock" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="debugReset" direction="input" role="reset" width="1" />
+  </interface>
+  <interface name="debug_resetOut" kind="reset" start="1">
+   <property name="associatedClock" value="clock" />
+   <property name="associatedDirectReset" value="" />
+   <property name="associatedResetSinks" value="none" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="debug_resetOut" direction="output" role="reset" width="1" />
+  </interface>
+  <interface name="externalInterrupt" kind="interrupt" start="1">
+   <property name="associatedAddressablePoint" value="" />
+   <property name="associatedClock" value="clock" />
+   <property name="associatedReset" value="debug_resetOut" />
+   <property name="irqMap" value="" />
+   <property name="irqScheme" value="INDIVIDUAL_REQUESTS" />
+   <port name="externalInterrupt" direction="input" role="irq" width="1" />
+  </interface>
+  <interface name="timerInterrupt" kind="interrupt" start="1">
+   <property name="associatedAddressablePoint" value="" />
+   <property name="associatedClock" value="clock" />
+   <property name="associatedReset" value="debug_resetOut" />
+   <property name="irqMap" value="" />
+   <property name="irqScheme" value="INDIVIDUAL_REQUESTS" />
+   <port name="timerInterrupt" direction="input" role="irq" width="1" />
+  </interface>
+  <interface name="softwareInterrupt" kind="conduit" start="0">
+   <property name="associatedClock" value="clock" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="softwareInterrupt" direction="input" role="export" width="1" />
+  </interface>
+  <interface name="jtag" kind="conduit" start="0">
+   <property name="associatedClock" value="clock" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="jtag_tms" direction="input" role="export" width="1" />
+   <port name="jtag_tdi" direction="input" role="export1" width="1" />
+   <port name="jtag_tdo" direction="output" role="export2" width="1" />
+   <port name="jtag_tck" direction="input" role="export3" width="1" />
+  </interface>
+ </perimeter>
+ <entity kind="bram_VexRiscvAxi4_0" version="1.0" name="bram_VexRiscvAxi4_0">
+  <parameter name="AUTO_DBUSAXI_ADDRESS_WIDTH" value="-1" />
+  <parameter name="AUTO_DBUSAXI_ADDRESS_MAP" value="" />
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Arria 10" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_IBUSAXI_ADDRESS_MAP" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="2" />
+  <parameter name="AUTO_TIMERINTERRUPT_INTERRUPTS_USED" value="-1" />
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_CLOCK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLOCK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_DEVICE" value="10AX115N2F40E2LG" />
+  <parameter name="AUTO_IBUSAXI_ADDRESS_WIDTH" value="-1" />
+  <parameter name="AUTO_EXTERNALINTERRUPT_INTERRUPTS_USED" value="-1" />
+  <generatedFiles>
+   <file
+       path="/home/u52099/PAC_card_A10/test_bram/test_bram/bram_ip_test/ip/bram/bram_VexRiscvAxi4_0/synth/bram_VexRiscvAxi4_0.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/u52099/PAC_card_A10/test_bram/test_bram/bram_ip_test/ip/bram/bram_VexRiscvAxi4_0/synth/bram_VexRiscvAxi4_0.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/u52099/PAC_card_A10/test_bram/test_bram/bram_ip_test/ip/bram/bram_VexRiscvAxi4_0.ip" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="/home/u52099/PAC_card_A10/test_bram/test_bram/bram_ip_test/VexRiscvAxi4_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="bram_VexRiscvAxi4_0">"Generating: bram_VexRiscvAxi4_0"</message>
+   <message level="Info" culprit="bram_VexRiscvAxi4_0">"Generating: VexRiscvAxi4"</message>
+  </messages>
+ </entity>
+ <entity kind="VexRiscvAxi4" version="1.0" name="VexRiscvAxi4">
+  <parameter name="AUTO_TIMERINTERRUPT_INTERRUPTS_USED" value="-1" />
+  <parameter name="AUTO_EXTERNALINTERRUPT_INTERRUPTS_USED" value="-1" />
+  <generatedFiles>
+   <file
+       path="/home/u52099/PAC_card_A10/test_bram/test_bram/bram_ip_test/ip/bram/bram_VexRiscvAxi4_0/VexRiscvAxi4_10/synth/VexRiscvAxi4.v"
+       attributes="TOP_LEVEL_FILE" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/u52099/PAC_card_A10/test_bram/test_bram/bram_ip_test/ip/bram/bram_VexRiscvAxi4_0/VexRiscvAxi4_10/synth/VexRiscvAxi4.v"
+       attributes="TOP_LEVEL_FILE" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/u52099/PAC_card_A10/test_bram/test_bram/bram_ip_test/VexRiscvAxi4_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="bram_VexRiscvAxi4_0" as="VexRiscvAxi4_0" />
+  <messages>
+   <message level="Info" culprit="bram_VexRiscvAxi4_0">"Generating: VexRiscvAxi4"</message>
+  </messages>
+ </entity>
+</deploy>

@@ -1,0 +1,1380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EnsembleReport
+ name="bram_VexRiscvAxi4_0"
+ kind="bram_VexRiscvAxi4_0"
+ version="1.0"
+ fabric="QSYS">
+ <!-- Format version 19.2 57 (Future versions may contain additional information.) -->
+ <!-- 2021.08.10.11:29:38 -->
+ <!-- A collection of modules and connections -->
+ <parameter name="AUTO_GENERATION_ID">
+  <type>java.lang.Integer</type>
+  <value>0</value>
+  <derived>false</derived>
+  <enabled>true</enabled>
+  <visible>false</visible>
+  <valid>true</valid>
+  <sysinfo_type>GENERATION_ID</sysinfo_type>
+ </parameter>
+ <parameter name="AUTO_UNIQUE_ID">
+  <type>java.lang.String</type>
+  <value></value>
+  <derived>false</derived>
+  <enabled>true</enabled>
+  <visible>false</visible>
+  <valid>true</valid>
+  <sysinfo_type>UNIQUE_ID</sysinfo_type>
+ </parameter>
+ <parameter name="AUTO_DEVICE_FAMILY">
+  <type>java.lang.String</type>
+  <value>ARRIA10</value>
+  <derived>false</derived>
+  <enabled>true</enabled>
+  <visible>false</visible>
+  <valid>true</valid>
+  <sysinfo_type>DEVICE_FAMILY</sysinfo_type>
+ </parameter>
+ <parameter name="AUTO_DEVICE">
+  <type>java.lang.String</type>
+  <value>10AX115N2F40E2LG</value>
+  <derived>false</derived>
+  <enabled>true</enabled>
+  <visible>false</visible>
+  <valid>true</valid>
+  <sysinfo_type>DEVICE</sysinfo_type>
+ </parameter>
+ <parameter name="AUTO_DEVICE_SPEEDGRADE">
+  <type>java.lang.String</type>
+  <value>2</value>
+  <derived>false</derived>
+  <enabled>true</enabled>
+  <visible>false</visible>
+  <valid>true</valid>
+  <sysinfo_type>DEVICE_SPEEDGRADE</sysinfo_type>
+ </parameter>
+ <parameter name="AUTO_CLOCK_CLOCK_RATE">
+  <type>java.lang.Long</type>
+  <value>-1</value>
+  <derived>false</derived>
+  <enabled>true</enabled>
+  <visible>false</visible>
+  <valid>true</valid>
+  <sysinfo_type>CLOCK_RATE</sysinfo_type>
+  <sysinfo_arg>clock</sysinfo_arg>
+ </parameter>
+ <parameter name="AUTO_CLOCK_CLOCK_DOMAIN">
+  <type>java.lang.Integer</type>
+  <value>-1</value>
+  <derived>false</derived>
+  <enabled>true</enabled>
+  <visible>false</visible>
+  <valid>true</valid>
+  <sysinfo_type>CLOCK_DOMAIN</sysinfo_type>
+  <sysinfo_arg>clock</sysinfo_arg>
+ </parameter>
+ <parameter name="AUTO_CLOCK_RESET_DOMAIN">
+  <type>java.lang.Integer</type>
+  <value>-1</value>
+  <derived>false</derived>
+  <enabled>true</enabled>
+  <visible>false</visible>
+  <valid>true</valid>
+  <sysinfo_type>RESET_DOMAIN</sysinfo_type>
+  <sysinfo_arg>clock</sysinfo_arg>
+ </parameter>
+ <parameter name="AUTO_DBUSAXI_ADDRESS_MAP">
+  <type>com.altera.entityinterfaces.moduleext.AddressMap</type>
+  <value></value>
+  <derived>false</derived>
+  <enabled>true</enabled>
+  <visible>false</visible>
+  <valid>true</valid>
+  <sysinfo_type>ADDRESS_MAP</sysinfo_type>
+  <sysinfo_arg>dBusaxi</sysinfo_arg>
+ </parameter>
+ <parameter name="AUTO_DBUSAXI_ADDRESS_WIDTH">
+  <type>com.altera.entityinterfaces.moduleext.AddressWidthType</type>
+  <value>-1</value>
+  <derived>false</derived>
+  <enabled>true</enabled>
+  <visible>false</visible>
+  <valid>true</valid>
+  <sysinfo_type>ADDRESS_WIDTH</sysinfo_type>
+  <sysinfo_arg>dBusaxi</sysinfo_arg>
+ </parameter>
+ <parameter name="AUTO_IBUSAXI_ADDRESS_MAP">
+  <type>com.altera.entityinterfaces.moduleext.AddressMap</type>
+  <value></value>
+  <derived>false</derived>
+  <enabled>true</enabled>
+  <visible>false</visible>
+  <valid>true</valid>
+  <sysinfo_type>ADDRESS_MAP</sysinfo_type>
+  <sysinfo_arg>iBusaxi</sysinfo_arg>
+ </parameter>
+ <parameter name="AUTO_IBUSAXI_ADDRESS_WIDTH">
+  <type>com.altera.entityinterfaces.moduleext.AddressWidthType</type>
+  <value>-1</value>
+  <derived>false</derived>
+  <enabled>true</enabled>
+  <visible>false</visible>
+  <valid>true</valid>
+  <sysinfo_type>ADDRESS_WIDTH</sysinfo_type>
+  <sysinfo_arg>iBusaxi</sysinfo_arg>
+ </parameter>
+ <parameter name="AUTO_EXTERNALINTERRUPT_INTERRUPTS_USED">
+  <type>java.math.BigInteger</type>
+  <value>-1</value>
+  <derived>false</derived>
+  <enabled>true</enabled>
+  <visible>false</visible>
+  <valid>true</valid>
+  <sysinfo_type>INTERRUPTS_USED</sysinfo_type>
+  <sysinfo_arg>externalInterrupt</sysinfo_arg>
+ </parameter>
+ <parameter name="AUTO_TIMERINTERRUPT_INTERRUPTS_USED">
+  <type>java.math.BigInteger</type>
+  <value>-1</value>
+  <derived>false</derived>
+  <enabled>true</enabled>
+  <visible>false</visible>
+  <valid>true</valid>
+  <sysinfo_type>INTERRUPTS_USED</sysinfo_type>
+  <sysinfo_arg>timerInterrupt</sysinfo_arg>
+ </parameter>
+ <parameter name="deviceFamily">
+  <type>java.lang.String</type>
+  <value>Arria 10</value>
+  <derived>false</derived>
+  <enabled>true</enabled>
+  <visible>false</visible>
+  <valid>true</valid>
+  <sysinfo_type>DEVICE_FAMILY</sysinfo_type>
+ </parameter>
+ <parameter name="generateLegacySim">
+  <type>boolean</type>
+  <value>false</value>
+  <derived>false</derived>
+  <enabled>true</enabled>
+  <visible>true</visible>
+  <valid>true</valid>
+ </parameter>
+ <module
+   name="VexRiscvAxi4_0"
+   kind="VexRiscvAxi4"
+   version="1.0"
+   path="VexRiscvAxi4_0">
+  <!-- Describes a single module. Module parameters are
+the requested settings for a module instance. -->
+  <parameter name="AUTO_EXTERNALINTERRUPT_INTERRUPTS_USED">
+   <type>java.math.BigInteger</type>
+   <value>-1</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+   <sysinfo_type>INTERRUPTS_USED</sysinfo_type>
+   <sysinfo_arg>externalInterrupt</sysinfo_arg>
+  </parameter>
+  <parameter name="AUTO_TIMERINTERRUPT_INTERRUPTS_USED">
+   <type>java.math.BigInteger</type>
+   <value>-1</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>false</visible>
+   <valid>true</valid>
+   <sysinfo_type>INTERRUPTS_USED</sysinfo_type>
+   <sysinfo_arg>timerInterrupt</sysinfo_arg>
+  </parameter>
+  <parameter name="deviceFamily">
+   <type>java.lang.String</type>
+   <value>UNKNOWN</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="generateLegacySim">
+   <type>boolean</type>
+   <value>false</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <interface name="clock" kind="clock_sink" version="19.2">
+   <!-- The connection points exposed by a module instance for the
+particular module parameters. Connection points and their
+parameters are a RESULT of the module parameters. -->
+   <parameter name="externallyDriven">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="ptfSchematicName">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="deviceFamily">
+    <type>java.lang.String</type>
+    <value>UNKNOWN</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="generateLegacySim">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <type>clock</type>
+   <isStart>false</isStart>
+   <port>
+    <name>clk</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>clk</role>
+   </port>
+  </interface>
+  <interface name="reset" kind="reset_sink" version="19.2">
+   <!-- The connection points exposed by a module instance for the
+particular module parameters. Connection points and their
+parameters are a RESULT of the module parameters. -->
+   <parameter name="associatedClock">
+    <type>java.lang.String</type>
+    <value>clock</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="synchronousEdges">
+    <type>com.altera.sopcmodel.reset.Reset$Edges</type>
+    <value>DEASSERT</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="deviceFamily">
+    <type>java.lang.String</type>
+    <value>UNKNOWN</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="generateLegacySim">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <type>reset</type>
+   <isStart>false</isStart>
+   <port>
+    <name>reset</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>reset</role>
+   </port>
+  </interface>
+  <interface name="dBusaxi" kind="altera_axi4_master" version="19.2">
+   <!-- The connection points exposed by a module instance for the
+particular module parameters. Connection points and their
+parameters are a RESULT of the module parameters. -->
+   <parameter name="associatedClock">
+    <type>java.lang.String</type>
+    <value>clock</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="associatedReset">
+    <type>java.lang.String</type>
+    <value>reset</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="trustzoneAware">
+    <type>boolean</type>
+    <value>true</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="maximumOutstandingReads">
+    <type>java.lang.Integer</type>
+    <value>1</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="maximumOutstandingWrites">
+    <type>java.lang.Integer</type>
+    <value>1</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="maximumOutstandingTransactions">
+    <type>java.lang.Integer</type>
+    <value>1</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="readIssuingCapability">
+    <type>java.lang.Integer</type>
+    <value>1</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="writeIssuingCapability">
+    <type>java.lang.Integer</type>
+    <value>1</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="combinedIssuingCapability">
+    <type>java.lang.Integer</type>
+    <value>1</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="issuesINCRBursts">
+    <type>boolean</type>
+    <value>true</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="issuesWRAPBursts">
+    <type>boolean</type>
+    <value>true</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="issuesFIXEDBursts">
+    <type>boolean</type>
+    <value>true</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="deviceFamily">
+    <type>java.lang.String</type>
+    <value>UNKNOWN</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="generateLegacySim">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <type>axi4</type>
+   <isStart>true</isStart>
+   <port>
+    <name>dBusAxi_aw_valid</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>awvalid</role>
+   </port>
+   <port>
+    <name>dBusAxi_aw_ready</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>awready</role>
+   </port>
+   <port>
+    <name>dBusAxi_aw_payload_addr</name>
+    <direction>Output</direction>
+    <width>32</width>
+    <role>awaddr</role>
+   </port>
+   <port>
+    <name>dBusAxi_aw_payload_id</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>awid</role>
+   </port>
+   <port>
+    <name>dBusAxi_aw_payload_region</name>
+    <direction>Output</direction>
+    <width>4</width>
+    <role>awregion</role>
+   </port>
+   <port>
+    <name>dBusAxi_aw_payload_len</name>
+    <direction>Output</direction>
+    <width>8</width>
+    <role>awlen</role>
+   </port>
+   <port>
+    <name>dBusAxi_aw_payload_size</name>
+    <direction>Output</direction>
+    <width>3</width>
+    <role>awsize</role>
+   </port>
+   <port>
+    <name>dBusAxi_aw_payload_burst</name>
+    <direction>Output</direction>
+    <width>2</width>
+    <role>awburst</role>
+   </port>
+   <port>
+    <name>dBusAxi_aw_payload_lock</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>awlock</role>
+   </port>
+   <port>
+    <name>dBusAxi_aw_payload_cache</name>
+    <direction>Output</direction>
+    <width>4</width>
+    <role>awcache</role>
+   </port>
+   <port>
+    <name>dBusAxi_aw_payload_qos</name>
+    <direction>Output</direction>
+    <width>4</width>
+    <role>awqos</role>
+   </port>
+   <port>
+    <name>dBusAxi_aw_payload_prot</name>
+    <direction>Output</direction>
+    <width>3</width>
+    <role>awprot</role>
+   </port>
+   <port>
+    <name>dBusAxi_w_valid</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>wvalid</role>
+   </port>
+   <port>
+    <name>dBusAxi_w_ready</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>wready</role>
+   </port>
+   <port>
+    <name>dBusAxi_w_payload_data</name>
+    <direction>Output</direction>
+    <width>32</width>
+    <role>wdata</role>
+   </port>
+   <port>
+    <name>dBusAxi_w_payload_strb</name>
+    <direction>Output</direction>
+    <width>4</width>
+    <role>wstrb</role>
+   </port>
+   <port>
+    <name>dBusAxi_w_payload_last</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>wlast</role>
+   </port>
+   <port>
+    <name>dBusAxi_b_valid</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>bvalid</role>
+   </port>
+   <port>
+    <name>dBusAxi_b_ready</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>bready</role>
+   </port>
+   <port>
+    <name>dBusAxi_b_payload_id</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>bid</role>
+   </port>
+   <port>
+    <name>dBusAxi_b_payload_resp</name>
+    <direction>Input</direction>
+    <width>2</width>
+    <role>bresp</role>
+   </port>
+   <port>
+    <name>dBusAxi_ar_valid</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>arvalid</role>
+   </port>
+   <port>
+    <name>dBusAxi_ar_ready</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>arready</role>
+   </port>
+   <port>
+    <name>dBusAxi_ar_payload_addr</name>
+    <direction>Output</direction>
+    <width>32</width>
+    <role>araddr</role>
+   </port>
+   <port>
+    <name>dBusAxi_ar_payload_id</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>arid</role>
+   </port>
+   <port>
+    <name>dBusAxi_ar_payload_region</name>
+    <direction>Output</direction>
+    <width>4</width>
+    <role>arregion</role>
+   </port>
+   <port>
+    <name>dBusAxi_ar_payload_len</name>
+    <direction>Output</direction>
+    <width>8</width>
+    <role>arlen</role>
+   </port>
+   <port>
+    <name>dBusAxi_ar_payload_size</name>
+    <direction>Output</direction>
+    <width>3</width>
+    <role>arsize</role>
+   </port>
+   <port>
+    <name>dBusAxi_ar_payload_burst</name>
+    <direction>Output</direction>
+    <width>2</width>
+    <role>arburst</role>
+   </port>
+   <port>
+    <name>dBusAxi_ar_payload_lock</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>arlock</role>
+   </port>
+   <port>
+    <name>dBusAxi_ar_payload_cache</name>
+    <direction>Output</direction>
+    <width>4</width>
+    <role>arcache</role>
+   </port>
+   <port>
+    <name>dBusAxi_ar_payload_qos</name>
+    <direction>Output</direction>
+    <width>4</width>
+    <role>arqos</role>
+   </port>
+   <port>
+    <name>dBusAxi_ar_payload_prot</name>
+    <direction>Output</direction>
+    <width>3</width>
+    <role>arprot</role>
+   </port>
+   <port>
+    <name>dBusAxi_r_valid</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>rvalid</role>
+   </port>
+   <port>
+    <name>dBusAxi_r_ready</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>rready</role>
+   </port>
+   <port>
+    <name>dBusAxi_r_payload_data</name>
+    <direction>Input</direction>
+    <width>32</width>
+    <role>rdata</role>
+   </port>
+   <port>
+    <name>dBusAxi_r_payload_id</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>rid</role>
+   </port>
+   <port>
+    <name>dBusAxi_r_payload_resp</name>
+    <direction>Input</direction>
+    <width>2</width>
+    <role>rresp</role>
+   </port>
+   <port>
+    <name>dBusAxi_r_payload_last</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>rlast</role>
+   </port>
+  </interface>
+  <interface name="iBusaxi" kind="altera_axi4_master" version="19.2">
+   <!-- The connection points exposed by a module instance for the
+particular module parameters. Connection points and their
+parameters are a RESULT of the module parameters. -->
+   <parameter name="associatedClock">
+    <type>java.lang.String</type>
+    <value>clock</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="associatedReset">
+    <type>java.lang.String</type>
+    <value>reset</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="trustzoneAware">
+    <type>boolean</type>
+    <value>true</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="maximumOutstandingReads">
+    <type>java.lang.Integer</type>
+    <value>1</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="maximumOutstandingWrites">
+    <type>java.lang.Integer</type>
+    <value>1</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="maximumOutstandingTransactions">
+    <type>java.lang.Integer</type>
+    <value>1</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="readIssuingCapability">
+    <type>java.lang.Integer</type>
+    <value>1</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="writeIssuingCapability">
+    <type>java.lang.Integer</type>
+    <value>1</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="combinedIssuingCapability">
+    <type>java.lang.Integer</type>
+    <value>1</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="issuesINCRBursts">
+    <type>boolean</type>
+    <value>true</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="issuesWRAPBursts">
+    <type>boolean</type>
+    <value>true</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="issuesFIXEDBursts">
+    <type>boolean</type>
+    <value>true</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="deviceFamily">
+    <type>java.lang.String</type>
+    <value>UNKNOWN</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="generateLegacySim">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <type>axi4</type>
+   <isStart>true</isStart>
+   <port>
+    <name>iBusAxi_ar_valid</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>arvalid</role>
+   </port>
+   <port>
+    <name>iBusAxi_ar_ready</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>arready</role>
+   </port>
+   <port>
+    <name>iBusAxi_ar_payload_addr</name>
+    <direction>Output</direction>
+    <width>32</width>
+    <role>araddr</role>
+   </port>
+   <port>
+    <name>iBusAxi_ar_payload_id</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>arid</role>
+   </port>
+   <port>
+    <name>iBusAxi_ar_payload_region</name>
+    <direction>Output</direction>
+    <width>4</width>
+    <role>arregion</role>
+   </port>
+   <port>
+    <name>iBusAxi_ar_payload_len</name>
+    <direction>Output</direction>
+    <width>8</width>
+    <role>arlen</role>
+   </port>
+   <port>
+    <name>iBusAxi_ar_payload_size</name>
+    <direction>Output</direction>
+    <width>3</width>
+    <role>arsize</role>
+   </port>
+   <port>
+    <name>iBusAxi_ar_payload_burst</name>
+    <direction>Output</direction>
+    <width>2</width>
+    <role>arburst</role>
+   </port>
+   <port>
+    <name>iBusAxi_ar_payload_lock</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>arlock</role>
+   </port>
+   <port>
+    <name>iBusAxi_ar_payload_cache</name>
+    <direction>Output</direction>
+    <width>4</width>
+    <role>arcache</role>
+   </port>
+   <port>
+    <name>iBusAxi_ar_payload_qos</name>
+    <direction>Output</direction>
+    <width>4</width>
+    <role>arqos</role>
+   </port>
+   <port>
+    <name>iBusAxi_ar_payload_prot</name>
+    <direction>Output</direction>
+    <width>3</width>
+    <role>arprot</role>
+   </port>
+   <port>
+    <name>iBusAxi_r_valid</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>rvalid</role>
+   </port>
+   <port>
+    <name>iBusAxi_r_ready</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>rready</role>
+   </port>
+   <port>
+    <name>iBusAxi_r_payload_data</name>
+    <direction>Input</direction>
+    <width>32</width>
+    <role>rdata</role>
+   </port>
+   <port>
+    <name>iBusAxi_r_payload_id</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>rid</role>
+   </port>
+   <port>
+    <name>iBusAxi_r_payload_resp</name>
+    <direction>Input</direction>
+    <width>2</width>
+    <role>rresp</role>
+   </port>
+   <port>
+    <name>iBusAxi_r_payload_last</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>rlast</role>
+   </port>
+   <port>
+    <name>iBusaxi_awaddr</name>
+    <direction>Output</direction>
+    <width>32</width>
+    <role>awaddr</role>
+   </port>
+   <port>
+    <name>iBusaxi_awprot</name>
+    <direction>Output</direction>
+    <width>3</width>
+    <role>awprot</role>
+   </port>
+   <port>
+    <name>iBusaxi_awlock</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>awlock</role>
+   </port>
+   <port>
+    <name>iBusaxi_awvalid</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>awvalid</role>
+   </port>
+   <port>
+    <name>iBusaxi_awready</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>awready</role>
+   </port>
+   <port>
+    <name>iBusaxi_wdata</name>
+    <direction>Output</direction>
+    <width>32</width>
+    <role>wdata</role>
+   </port>
+   <port>
+    <name>iBusaxi_wlast</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>wlast</role>
+   </port>
+   <port>
+    <name>iBusaxi_wready</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>wready</role>
+   </port>
+   <port>
+    <name>iBusaxi_wvalid</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>wvalid</role>
+   </port>
+   <port>
+    <name>iBusaxi_bvalid</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>bvalid</role>
+   </port>
+   <port>
+    <name>iBusaxi_bready</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>bready</role>
+   </port>
+   <port>
+    <name>iBusaxi_bid</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>bid</role>
+   </port>
+   <port>
+    <name>iBusaxi_awid</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>awid</role>
+   </port>
+  </interface>
+  <interface name="debugReset" kind="reset_sink" version="19.2">
+   <!-- The connection points exposed by a module instance for the
+particular module parameters. Connection points and their
+parameters are a RESULT of the module parameters. -->
+   <parameter name="associatedClock">
+    <type>java.lang.String</type>
+    <value>clock</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="synchronousEdges">
+    <type>com.altera.sopcmodel.reset.Reset$Edges</type>
+    <value>DEASSERT</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="deviceFamily">
+    <type>java.lang.String</type>
+    <value>UNKNOWN</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="generateLegacySim">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <type>reset</type>
+   <isStart>false</isStart>
+   <port>
+    <name>debugReset</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>reset</role>
+   </port>
+  </interface>
+  <interface name="debug_resetOut" kind="reset_source" version="19.2">
+   <!-- The connection points exposed by a module instance for the
+particular module parameters. Connection points and their
+parameters are a RESULT of the module parameters. -->
+   <parameter name="associatedClock">
+    <type>java.lang.String</type>
+    <value>clock</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="associatedDirectReset">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="associatedResetSinks">
+    <type>[Ljava.lang.String;</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="synchronousEdges">
+    <type>com.altera.sopcmodel.reset.Reset$Edges</type>
+    <value>DEASSERT</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="deviceFamily">
+    <type>java.lang.String</type>
+    <value>UNKNOWN</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="generateLegacySim">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <type>reset</type>
+   <isStart>true</isStart>
+   <port>
+    <name>debug_resetOut</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>reset</role>
+   </port>
+  </interface>
+  <interface name="externalInterrupt" kind="interrupt_receiver" version="19.2">
+   <!-- The connection points exposed by a module instance for the
+particular module parameters. Connection points and their
+parameters are a RESULT of the module parameters. -->
+   <parameter name="associatedAddressablePoint">
+    <type>com.altera.entityinterfaces.IConnectionPoint</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="associatedClock">
+    <type>java.lang.String</type>
+    <value>clock</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="associatedReset">
+    <type>java.lang.String</type>
+    <value>debug_resetOut</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="irqMap">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="irqScheme">
+    <type>com.altera.sopcmodel.interrupt.InterruptConnectionPoint$EIrqScheme</type>
+    <value>INDIVIDUAL_REQUESTS</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="deviceFamily">
+    <type>java.lang.String</type>
+    <value>UNKNOWN</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="generateLegacySim">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <type>interrupt</type>
+   <isStart>true</isStart>
+   <port>
+    <name>externalInterrupt</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>irq</role>
+   </port>
+  </interface>
+  <interface name="timerInterrupt" kind="interrupt_receiver" version="19.2">
+   <!-- The connection points exposed by a module instance for the
+particular module parameters. Connection points and their
+parameters are a RESULT of the module parameters. -->
+   <parameter name="associatedAddressablePoint">
+    <type>com.altera.entityinterfaces.IConnectionPoint</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="associatedClock">
+    <type>java.lang.String</type>
+    <value>clock</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="associatedReset">
+    <type>java.lang.String</type>
+    <value>debug_resetOut</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="irqMap">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="irqScheme">
+    <type>com.altera.sopcmodel.interrupt.InterruptConnectionPoint$EIrqScheme</type>
+    <value>INDIVIDUAL_REQUESTS</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="deviceFamily">
+    <type>java.lang.String</type>
+    <value>UNKNOWN</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="generateLegacySim">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <type>interrupt</type>
+   <isStart>true</isStart>
+   <port>
+    <name>timerInterrupt</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>irq</role>
+   </port>
+  </interface>
+  <interface name="softwareInterrupt" kind="conduit_end" version="19.2">
+   <!-- The connection points exposed by a module instance for the
+particular module parameters. Connection points and their
+parameters are a RESULT of the module parameters. -->
+   <parameter name="associatedClock">
+    <type>java.lang.String</type>
+    <value>clock</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="associatedReset">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="prSafe">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="deviceFamily">
+    <type>java.lang.String</type>
+    <value>UNKNOWN</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="generateLegacySim">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <type>conduit</type>
+   <isStart>false</isStart>
+   <port>
+    <name>softwareInterrupt</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>export</role>
+   </port>
+  </interface>
+  <interface name="jtag" kind="conduit_end" version="19.2">
+   <!-- The connection points exposed by a module instance for the
+particular module parameters. Connection points and their
+parameters are a RESULT of the module parameters. -->
+   <parameter name="associatedClock">
+    <type>java.lang.String</type>
+    <value>clock</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="associatedReset">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="prSafe">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="deviceFamily">
+    <type>java.lang.String</type>
+    <value>UNKNOWN</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="generateLegacySim">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <type>conduit</type>
+   <isStart>false</isStart>
+   <port>
+    <name>jtag_tms</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>export</role>
+   </port>
+   <port>
+    <name>jtag_tdi</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>export1</role>
+   </port>
+   <port>
+    <name>jtag_tdo</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>export2</role>
+   </port>
+   <port>
+    <name>jtag_tck</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>export3</role>
+   </port>
+  </interface>
+ </module>
+ <plugin>
+  <instanceCount>1</instanceCount>
+  <name>VexRiscvAxi4</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IModule</subtype>
+  <displayName>VexRiscvAxi4</displayName>
+  <version>1.0</version>
+ </plugin>
+ <plugin>
+  <instanceCount>1</instanceCount>
+  <name>clock_sink</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
+  <displayName>Clock Input</displayName>
+  <version>19.2</version>
+ </plugin>
+ <plugin>
+  <instanceCount>2</instanceCount>
+  <name>reset_sink</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
+  <displayName>Reset Input</displayName>
+  <version>19.2</version>
+ </plugin>
+ <plugin>
+  <instanceCount>2</instanceCount>
+  <name>altera_axi4_master</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
+  <displayName>AXI4 Master</displayName>
+  <version>19.2</version>
+ </plugin>
+ <plugin>
+  <instanceCount>1</instanceCount>
+  <name>reset_source</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
+  <displayName>Reset Output</displayName>
+  <version>19.2</version>
+ </plugin>
+ <plugin>
+  <instanceCount>2</instanceCount>
+  <name>interrupt_receiver</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
+  <displayName>Interrupt Receiver</displayName>
+  <version>19.2</version>
+ </plugin>
+ <plugin>
+  <instanceCount>2</instanceCount>
+  <name>conduit_end</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
+  <displayName>Conduit</displayName>
+  <version>19.2</version>
+ </plugin>
+ <reportVersion>19.2 57</reportVersion>
+ <uniqueIdentifier></uniqueIdentifier>
+</EnsembleReport>

@@ -1,0 +1,11 @@
+afu.json
+
+delay.sv
+afu.sv
+ofs_plat_afu_avalon.sv
+#bram.sv
+bram/synth/bram.v
+bram.qsys
+ip/bram/bram_clock_in.ip
+ip/bram/bram_onchip_memory2_0.ip
+ip/bram/bram_reset_in.ip
